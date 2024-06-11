@@ -5,6 +5,7 @@ import AboutCompanyPage from "./components/about/AboutCompanyPage";
 import ServicesPage from "./components/services/ServicesPage";
 import NavBarComp from "./components/header/navbar/NavBarComp";
 import BlogPage from "./components/blog/BlogPage";
+import FooterComp from "./components/footer/footerfold/FooterComp";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
           <Route path={"/contactus"} element={<ContactUsPage />} />
           <Route path={"/blog"} element={<BlogPage />} />
         </Routes>
-        {/* <Footer /> */}
+        <FooterComp />
       
     </BrowserRouter>
   );
