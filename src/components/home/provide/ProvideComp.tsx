@@ -2,7 +2,7 @@ import ProvideCard from "./ProvideCard";
 
 function ProvideComp() {
     return(
-        <div className="flex flex-col justify-center items-center bg-[#101720]  text-white gap-12 p-12">
+        <div className="flex flex-col justify-center items-center max-w-screen bg-[#101720]  text-white gap-12 p-12">
 
             <div className="flex flex-col justify-center items-center text-center gap-8">
                 <p className="font-medium text-2xl">

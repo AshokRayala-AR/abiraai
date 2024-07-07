@@ -8,7 +8,7 @@ import WiatechCardsComp from "./wiatechcards/WiaTechCardsComp";
 
 function AboutCompanyPage() {
     return(
-        <div>
+        <div className="max-w-screen">
 
             <AboutComp />
             <WiatechComp />

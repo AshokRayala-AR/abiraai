@@ -3,7 +3,7 @@ import arrow from "../../../assets/svg/arrow.svg"
 
 function ProvideCard() {
     return(
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center max-w-screen">
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3">
 

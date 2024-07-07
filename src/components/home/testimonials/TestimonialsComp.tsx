@@ -22,8 +22,8 @@ export default function TestimonialsComp() {
         </div>
         <div className="w-full">
           <div className="w-full grid grid-cols-1 md:flex gap-4 lg:gap-8 md:justify-center">
-            {TestimonialData.map((item) => {
-              return <TestimonialItem item={item} />;
+            {TestimonialData.map((item,index) => {
+              return <TestimonialItem item={item} key={index}/>;
             })}
           </div>
         </div>

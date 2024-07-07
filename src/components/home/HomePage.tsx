@@ -13,7 +13,7 @@ import NewsComp from "./news/NewsComp";
 
 function HomePage() {
     return(
-        <div className=""> 
+        <div className="max-w-screen"> 
             <WelcomePage />
             <ClassroomComp />
             <AboutComp />

@@ -1,35 +1,54 @@
-import logo from '../../../assets/abiralogo.png'
-import { useNavigate } from "react-router-dom";
-// import { useSelector } from "react-redux";
-import { Example } from "./Example";
-import { motion } from "framer-motion";
+import logo from "../../../assets/abiralogo.png";
 
+import { useNavigate } from "react-router-dom";
+
+import { Example } from "./Example";
 
 export default function HeaderComp() {
   const navigate = useNavigate();
-//   const orderItems = useSelector((store:any) => {
-//     return store.cart.items;
-//   });
+
   return (
-    <div className="relative">
-      <div className="flex  shadow-md bg-[rgb(0,0,0)] text-white p-2 py-4 justify-between items-center md:hidden">
+    <div className="relative ">
+      <div className="flex  py-2 px-4 shadow-md bg-slate-50 justify-between items-center md:hidden">
         <div>
           <Example />
         </div>
-        
-        
-        
-      </div>
-      <div className=" hidden bg-[rgb(0,0,0)] md:flex md:justify-around md:items-center p-2 py-4 ">
-      <div className='flex'>
-          <img src={logo} alt="logo" className="w-20" />
+        <div
+          onClick={() => {
+            navigate("/");
+          }}
+          className="flex cursor-pointer"
+        >
+          <div>
+            <img src={logo} alt="logo" className="w-20  " />
+          </div>
           <div className="flex flex-col items-center justify-center">
-                <p className="text-4xl font-semibold text-[#54f4fc] font-arima ">Abira AI</p>
-                <p className="text-white">Journey Towards Future</p>
-            </div>
+            <p className="text-4xl font-semibold text-[#54f4fc] font-arima ">
+              Abira AI
+            </p>
+            <p className="text-black">Journey Towards Future</p>
+          </div>
         </div>
-        <div className="flex md:gap-12 lg:gap-32 text-white">
-          <ul className="flex justify-end gap-6">
+      </div>
+      <div className=" hidden bg-slate-50 md:flex md:justify-around md:items-center px-5 ">
+        <div
+          onClick={() => {
+            navigate("/");
+          }}
+          className="flex cursor-pointer"
+        >
+          <div className=" max-h-[120px]  ">
+            <img src={logo} alt="" className="max-h-[120px] " />
+          </div>
+          <div className="flex flex-col items-center justify-center">
+            <p className="text-4xl font-semibold text-[#54f4fc] font-arima ">
+              Abira AI
+            </p>
+            <p className="text-black">Journey Towards Future</p>
+          </div>
+        </div>
+        <div className="flex md:gap-12 lg:gap-32 text-black">
+          <ul className="flex justify-end gap-6 text-xl font-normal">
             <li
               className={`hover:cursor-pointer`}
               onClick={() => {
@@ -38,7 +57,7 @@ export default function HeaderComp() {
             >
               Home
             </li>
-            
+
             <li
               className={`hover:cursor-pointer`}
               onClick={() => {
@@ -47,11 +66,11 @@ export default function HeaderComp() {
             >
               About Us
             </li>
-            
+
             <li
               className={`hover:cursor-pointer`}
               onClick={() => {
-                navigate("Services");
+                navigate("services");
               }}
             >
               Services
@@ -59,7 +78,7 @@ export default function HeaderComp() {
             <li
               className={`hover:cursor-pointer`}
               onClick={() => {
-                navigate("ContactUs");
+                navigate("contactus");
               }}
             >
               Contact Us
@@ -67,13 +86,12 @@ export default function HeaderComp() {
             <li
               className={`hover:cursor-pointer`}
               onClick={() => {
-                navigate("Blog");
+                navigate("blog");
               }}
             >
               Blog
             </li>
           </ul>
-          
         </div>
       </div>
     </div>

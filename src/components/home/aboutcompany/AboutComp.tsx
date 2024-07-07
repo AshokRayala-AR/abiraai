@@ -6,15 +6,15 @@ import complete from "../../../assets/svg/complete.png"
 
 function AboutComp() {
     return(
-        <div className="bg-[#101720] p-20 px-16 flex">
+        <div className="bg-[#101720] md:p-20 p-8 flex flex-col max-w-screen gap-8 md:gap-0 md:flex-row">
 
-            <div className="w-4/6 flex justify-center items-center gap-4">
+            <div className="w-full md:w-4/6 flex flex-col md:flex-row justify-center items-center gap-4">
 
-                <div className=" w-2/6 h-full flex justify-center items-center py-8">
+                <div className=" md:w-2/6 h-full flex justify-center items-center py-8">
                     <img src={Person} className="rounded-t-[200px] rounded-b-[200px] h-full"/>
                 </div>
 
-                <div className="w-4/6 p-12 flex flex-col gap-8">
+                <div className="md:w-4/6 md:p-12 flex flex-col gap-8">
 
                     <div>
                     <p className="font-semibold text-3xl ">
@@ -43,18 +43,21 @@ function AboutComp() {
                     <div>
                         <button className="bg-[#FB5457] rounded-lg p-2 px-4">Read More</button>
                     </div>
+
+
                 </div>
+
             </div>
 
-            <div className="flex flex-col text-white w-2/6 gap-12 p-8">
+            <div className="flex flex-col text-white md:w-2/6 gap-12 md:p-8">
 
                 <div className="flex flex-col gap-4">
-                    <p className="text-xl font-semibold">{AboutData[0][0].label}</p>o
+                    <p className="text-xl font-semibold">{AboutData[0][0].label}</p>
 
                     <p className="text-md font-normal">{AboutData[0][0].content}</p>
                 </div>
 
-                <div className="flex justify-between ">
+                <div className="flex justify-between gap-4">
 
                     <div className=" text-left">
                         <div className="flex">

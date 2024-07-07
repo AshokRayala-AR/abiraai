@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { NavListData } from "./NavListData";
+import { NavListData } from "./NavListData.tsx";
 export default function NavListComp() {
   return (
     <ul className="flex justify-center self-center items-center gap-8 h-full">
