@@ -6,10 +6,10 @@ import Ceo5 from "../../../assets/ceo5.jpeg";
 
 const CeoComp = () => {
   return (
-    <section className="md:h-screen bg-[#101720] ">
+    <section className="md:h-screen bg-[#101720] p-12 md:p-4 ">
       <div className="flex flex-col items-center h-full justify-center space-y-10 md:flex-row md:space-y-0 md:space-x-4 max-w-5xl mx-auto">
-        <div className="flex items-center justify-center w-full">
-          <img src={Ceo} className="h-80 w-auto object-contain" />
+        <div className="flex flex-col md:flex-row items-center justify-center w-full h-full">
+          <img src={Ceo} className="h-2/6 md:h-4/6 w-3/6 md:w-auto object-contain" />
         </div>
         <div className="space-y-12 md:space-y-24 w-full">
           <div className="space-y-4">

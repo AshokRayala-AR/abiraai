@@ -5,11 +5,11 @@ function ProvideCard() {
     return(
         <div className="flex justify-center items-center">
 
-            <div className="grid grid-cols-3">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3">
 
             {ProvideData.map((item, index) => {
                 return(
-                    <div key={index} className="flex border border-slate-600 bg-white text-black p-6 px-12">
+                    <div key={index} className="flex border border-slate-600 bg-white hover:bg-[#38848c] hover:scale-110 hover:text-white text-black p-6 px-12">
 
                         <div className="flex flex-col justify-around gap-4 w-4/6">
                             <p className="text-3xl font-bold" >{item.num}</p>

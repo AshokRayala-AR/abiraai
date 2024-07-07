@@ -43,16 +43,13 @@ function AboutComp() {
                     <div>
                         <button className="bg-[#FB5457] rounded-lg p-2 px-4">Read More</button>
                     </div>
-
-
                 </div>
-
             </div>
 
             <div className="flex flex-col text-white w-2/6 gap-12 p-8">
 
                 <div className="flex flex-col gap-4">
-                    <p className="text-xl font-semibold">{AboutData[0][0].label}</p>
+                    <p className="text-xl font-semibold">{AboutData[0][0].label}</p>o
 
                     <p className="text-md font-normal">{AboutData[0][0].content}</p>
                 </div>

@@ -1,5 +1,5 @@
 import main from "../../../assets/main.jpeg";
-
+// import BlockComp from "../block/BlockComp";
 function BlogMainComp() {
     return (
         <div className="relative flex justify-center items-center p-36 " >
@@ -19,6 +19,7 @@ function BlogMainComp() {
                     Home &gt; <span className="text-transparent bg-gradient-to-r bg-clip-text from-purple-400 via-blue-400 to-cyan-400">Blog</span>
                 </p>
             </div>
+
         </div>
     );
 }
