@@ -29,4 +29,4 @@ export const BestSolutionsData = [
     title: "SEO",
   },
   
-];v
+];

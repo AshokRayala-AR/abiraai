@@ -1,4 +1,4 @@
-export default function NewsItem({ item }) {
+export default function NewsItem({ item }:any) {
     return (
       <div className="flex items-center">
         <div className="text-white md:w-3/4 flex flex-col gap-2 justify-center">

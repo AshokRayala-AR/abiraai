@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 function CarouselComp() {
     const [activeIndex, setActiveIndex] = useState(0);
 
-    const handleDotClick = (index) => {
+    const handleDotClick = (index:number) => {
         setActiveIndex(index);
     };
     return (

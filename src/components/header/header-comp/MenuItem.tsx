@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
-// import { NavTypes } from "../../../../utils/types/Types.ts";
+import { NavTypes } from "../../../utils/types/Types";
 const variants = {
   open: {
     y: 0,

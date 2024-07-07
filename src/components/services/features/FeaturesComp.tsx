@@ -52,7 +52,7 @@ function FeaturesComp() {
 
                     <div>
                         <ul>
-                            {FeaturesData[1].map((item, index) => (
+                            {FeaturesData[1].map((item:any, index) => (
                                 <li key={index} className="flex items-center gap-2">
                                     <img src={item.svg} alt="tick icon" className="w-4 h-4" />
                                     <p className="text-white">{item.decp}</p>

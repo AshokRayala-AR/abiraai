@@ -1,11 +1,9 @@
-import { useState } from "react";
 import { TeamData } from "./TeamData";
 import teamlarge from "../../../assets/teamlarge.jpeg";
 import teamone from "../../../assets/teamone.png";
 import teamtwo from "../../../assets/teamtwo.png";
 import teamthree from "../../../assets/teamthree.png";
 export default function TeamComp() {
-    const [imageIndex,setImageIndex] = useState(0);
   return (
     <div className="bg-[#101720] flex flex-col p-8 md:p-12 md:h-screen ">
       <div className="text-center flex flex-col gap-4">
@@ -29,7 +27,9 @@ export default function TeamComp() {
                 <div className="flex justify-between w-4/6">
                   <div className="flex flex-col gap-1 ">
                     <p className="font-semibold">{item.name}</p>
-                    <p className="text-white text-opacity-70 font-roboto text-base font-normal leading-[150%]">{item.role}</p>
+                    <p className="text-white text-opacity-70 font-roboto text-base font-normal leading-[150%]">
+                      {item.role}
+                    </p>
                   </div>
                   <div className="p-1 rounded-full bg-white h-6 w-6 flex justify-center items-center">
                     <img src={item.imgpath} alt="imgpath" className="  " />
