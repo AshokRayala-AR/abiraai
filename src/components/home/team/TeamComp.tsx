@@ -7,7 +7,7 @@ import teamthree from "../../../assets/teamthree.png";
 export default function TeamComp() {
     const [imageIndex,setImageIndex] = useState(0);
   return (
-    <div className="bg-[#101720] flex flex-col p-12 h-screen pt-24">
+    <div className="bg-[#101720] flex flex-col p-8 md:p-12 md:h-screen ">
       <div className="text-center flex flex-col gap-4">
         <p className="font-bold ">
           <span className="text-transparent bg-gradient-to-r bg-clip-text from-purple-400 via-blue-400 to-cyan-400 font-inter text-[24px]  font-bold leading-[164%] tracking-[1px]">
@@ -18,8 +18,8 @@ export default function TeamComp() {
           We’ve Exclusive Team member Meet our Professionals
         </h3>
       </div>
-      <div className="flex w-full justify-center pt-6">
-        <div className="flex gap-4 flex-col gap-8 w-1/3 justify-center p-4 ">
+      <div className="flex flex-col md:flex-row w-full justify-center items-center pt-6">
+        <div className="grid grid-cols-2 md:flex gap-4 md:flex-col md:w-1/3 justify-center p-4 ">
           {TeamData.map((item, index) => {
             return (
               <div className="flex text-white gap-5" key={index}>
@@ -39,7 +39,7 @@ export default function TeamComp() {
             );
           })}
         </div>
-        <div className="w-1/2 p-8 flex items-center gap-4">
+        <div className="md:w-1/2 p-8 flex items-center justify-center gap-4">
           <div>
             <img src={teamlarge} alt="teamlarge" />
           </div>

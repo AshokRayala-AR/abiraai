@@ -1,13 +1,14 @@
 import { NavLink } from "react-router-dom";
 import { NavBarLiData } from "./NavBarLiData";
+import abiralogo from "../../../assets/abiralogo.png"
 
 function NavBarComp() {
     return(
-        <nav className="bg-[#000] flex justify-around items-center text-white p-2 py-4" > 
-            <div className="flex flex-col items-center justify-center">
-                <p className="text-4xl font-semibold text-[#54f4fc] font-arima">Present Software</p>
-                <p className="">Journey Towards Future</p>
-            </div>
+        <nav className="bg-[rgb(0,0,0)] flex justify-around items-center text-white p-2 py-4" > 
+        <div className="flex gap-6">
+        <img src={abiralogo} alt="logo" className="w-16 h-18 "/>
+            
+        </div>
             <div>
                 <ul className="flex gap-12">
                     {NavBarLiData.map((item, index) => {

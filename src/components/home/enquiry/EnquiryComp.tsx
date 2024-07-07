@@ -33,16 +33,16 @@ function EnquiryComp() {
       };
 
     return(
-        <div className="flex p-24 bg-[#575e64]">
+        <div className="flex flex-col md:flex-row p-8 md:p-12 lg:p-24 gap-8 bg-[#575e64]">
 
-            <div className="w-3/6 flex flex-col justify-center items-start px-16  gap-8">
+            <div className="md:w-3/6 sm:flex sm:flex-col justify-center items-start lg:px-16 gap-8">
 
                <div className="flex flex-col gap-6">
                  <p className="font-medium text-3xl">
                     <span className="text-transparent bg-gradient-to-r bg-clip-text from-purple-400 via-blue-400 to-cyan-400">Work Enquiry</span>
                 </p>
 
-                <p className="text-black text-3xl font-bold">
+                <p className="text-black text-3xl font-bold">       
                     {EnquiryData[0].title}
                 </p>
                 <p className="text-white text-xl">
@@ -72,9 +72,9 @@ function EnquiryComp() {
 
             </div>
 
-            <div className="w-3/6 flex justify-center items-center">
+            <div className="md:w-3/6  flex justify-center md:items-center">
 
-                <div className="bg-[#F6F3EE] p-8 flex flex-col gap-4 ">
+                <div className="bg-[#F6F3EE] w-full p-4 lg:p-8 flex flex-col gap-4 ">
 
                     <p className="text-2xl font-semibold">
                     Need Help For Project!  
@@ -85,18 +85,18 @@ function EnquiryComp() {
                     </p>
                     <form className="flex flex-col gap-8 " onSubmit={handleSubmit(onSubmit)}>
 
-                        <div className="flex gap-4">
-                            <div className="w-3/6 relative">
+                        <div className="flex flex-col lg:flex-row gap-4 w-full">
+                            <div className="w-full lg:w-3/6 relative">
                                 <input {...register("Name")} type="text"
                                 placeholder="Name"
-                                className="rounded-ld p-2 outline-none " />
+                                className="rounded-ld p-2 outline-none w-full" />
                                 {errors.Name && (<p className="text-red-500 absolute text-xs">{errors.Name?.message}</p>)}
                             </div>
 
-                            <div className="w-3/6 relative">
+                            <div className="w-full lg:w-3/6 relative">
                                 <input {...register("email")} type="text"
                                 placeholder="Email"
-                                className="rounded-ld p-2 outline-none " />
+                                className="rounded-ld p-2 outline-none w-full" />
                                 {errors.Name && (<p className="text-red-500 absolute text-xs">{errors.email?.message}</p>)}
                             </div>
 

@@ -1,8 +1,8 @@
 import quotationimg from "../../../assets/quotations.jpg";
 
-export default function TestimonialItem({ item }) {
+export default function TestimonialItem({ item}: any) {
   return (
-    <div className="w-[270px] bg-white p-4 m-2 rounded shadow-lg">
+    <div className="w-[270px] bg-white p-4 lg:p-8 m-2  rounded shadow-lg">
       <div className="flex items-center mb-4 ">
         <div className="w-1/4">
           <img src={quotationimg} alt="quotation" className="w-full" />
@@ -15,7 +15,7 @@ export default function TestimonialItem({ item }) {
       <div className="mb-4">
         <p className="text-gray-700">{item.content}</p>
       </div>
-      <div className="text-center">
+      <div className="text-center bg-[#F6F3EE] w-full p-2 lg:w-5/6">
         <p className="text-gray-500 font-medium">{item.user}</p>
       </div>
     </div>

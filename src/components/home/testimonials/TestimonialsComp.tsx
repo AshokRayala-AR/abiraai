@@ -4,12 +4,12 @@ import { TestimonialData } from "./TestimonialsData";
 export default function TestimonialsComp() {
   return (
     <div
-      className="relative w-full h-screen bg-cover bg-center p-16"
+      className="relative w-full md:h-screen bg-cover bg-center p-8 md:p-16"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="absolute inset-0 bg-black opacity-60"></div>
       <div className="relative z-10 flex flex-col  text-white p-8 gap-16">
-        <div className="w-[50%] pl-2">
+        <div className="md:w-1/2 md:pl-2">
           <p className="font-bold ">
             <span className="text-transparent bg-gradient-to-r bg-clip-text from-purple-400 via-blue-400 to-cyan-400 font-inter text-[18px]  font-bold leading-[164%] tracking-[1px]">
             Clients Testimonials
@@ -21,7 +21,7 @@ export default function TestimonialsComp() {
           </h3>
         </div>
         <div className="w-full">
-          <div className="w-full flex gap-8 justify-center">
+          <div className="w-full grid grid-cols-1 md:flex gap-4 lg:gap-8 md:justify-center">
             {TestimonialData.map((item) => {
               return <TestimonialItem item={item} />;
             })}
